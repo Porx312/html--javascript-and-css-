@@ -1,0 +1,33 @@
+.selector-container{
+width: 400;
+height: 400;
+font-size: 1rem;
+letter-spacing: 0;
+}
+
+/* selector for class */
+.selector-clas{
+color: rgb(0, 51, 255);
+}
+
+/* selector for id */
+
+
+#selector--id{
+color: green;
+}
+
+/* selector for data */
+
+[data-selector="selector"]{
+color: red;
+}
+ h2::marker{
+color: green;
+}
+
+.selector-container > h2 {
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  }
+  
