@@ -187,7 +187,21 @@ const s = "IX";
 const number = romanToInt(s);
 
 // 10. Fuera de la función, se declara una variable `s` que contiene el número romano "MCMXCIV".
-console.log("The integer representation of", s, "is:", number);
-
+/* console.log("The integer representation of", s, "is:", number);
+ */
 // 12. Finalmente, se muestra en la consola el mensaje que indica la representación entera del número romano.
 
+/* object */
+
+const box = document.querySelector('.box');
+console.log(box.clientTop);
+console.log(box.clientLeft);
+console.log(box.clientWidth);
+console.log(box.clientHeight);
+console.log(box.offsetHeight);
+console.log(box.offsetWidth)
+console.log(box.scrollHeight);
+console.log(box.scrollWidth);
+
+
+// box.style.height = `${box.scrollHeight}px`;

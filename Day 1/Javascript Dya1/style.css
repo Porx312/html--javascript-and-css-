@@ -1,0 +1,10 @@
+.box{
+margin: 20px auto;
+width: 200px;
+height: 200px;
+background-color: skyblue;
+border: 20px solid rgb(182, 16, 16);
+padding: 20px;
+text-align: center;
+font-size: 2rem;
+}
