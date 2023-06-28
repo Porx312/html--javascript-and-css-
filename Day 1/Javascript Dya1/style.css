@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400;1,700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* listado de apis */
+
+.list{
+display: flex;
+min-height: 90vh;
+gap: 10px;
+margin: 5vh 10px;
+flex-wrap: wrap;
+}
+.list-article{
+background-color: aqua;
+flex: 1 0 auto;
+border-radius: 10px;
+padding: 20px;
+}
+.list-article h2{
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .box{
 margin: 20px auto;
 width: 200px;

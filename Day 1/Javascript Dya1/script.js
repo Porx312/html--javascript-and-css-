@@ -193,7 +193,7 @@ const number = romanToInt(s);
 
 /* object */
 
-const box = document.querySelector('.box');
+/* const box = document.querySelector('.box');
 console.log(box.clientTop);
 console.log(box.clientLeft);
 console.log(box.clientWidth);
@@ -201,7 +201,12 @@ console.log(box.clientHeight);
 console.log(box.offsetHeight);
 console.log(box.offsetWidth)
 console.log(box.scrollHeight);
-console.log(box.scrollWidth);
+console.log(box.scrollWidth); */
 
 
 // box.style.height = `${box.scrollHeight}px`;
+
+
+//  Fetch
+
+
