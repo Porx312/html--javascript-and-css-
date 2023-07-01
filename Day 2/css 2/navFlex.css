@@ -1,0 +1,20 @@
+
+.main-nav > ul {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+.main-nav > ul > li {
+  flex: 1;
+}
+
+.submenu {
+  max-height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.submenu.open {
+  max-height: 200px; /* non-ideal magic number */
+}
