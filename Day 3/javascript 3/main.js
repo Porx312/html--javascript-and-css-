@@ -7,7 +7,7 @@ let inter = setInterval(() => {
 },1000);
  */
 
-const eventoFuturo = (res) => {
+/* const eventoFuturo = (res) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       res === true ? resolve("verdadero") : reject("faslso");
@@ -20,4 +20,6 @@ eventoFuturo(valor).then((response) => {
   console.log(response)
 })
 .catch((respon) => {console.log(respon);})
-.finally(() => {})
+.finally(() => {}) */
+
+
