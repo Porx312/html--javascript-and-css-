@@ -7,14 +7,17 @@ let inter = setInterval(() => {
 },1000);
  */
 
+const eventoFuturo = (res) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      res === true ? resolve("verdadero") : reject("faslso");
+    });
+  }, 2000);
+};
+const valor = true;
 
-const eventoFuturo = (res)=>{
-return new Promise((resolve,reject)=>{
-  setTimeout(() => {
-  res === true ? resolve("verdadero") : reject("faslso")
-  })
-},2000)
-}
-const valor = true
-console.log(eventoFuturo(valor))
-
+eventoFuturo(valor).then((response) => {
+  console.log(response)
+})
+.catch((respon) => {console.log(respon);})
+.finally(() => {})
