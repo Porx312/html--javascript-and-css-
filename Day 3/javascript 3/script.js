@@ -3,7 +3,8 @@ var resultado = document.getElementById('resultado');
 
 function mostrarInformacion() {
   var rect = miElemento.getBoundingClientRect();
-
+  let top = rect.top
+  miElemento.style.top = (top + 200) + "px"
   resultado.innerHTML = 'Coordenadas del elemento:<br>' +
     'Top: ' + rect.top + 'px<br>' +
     'Left: ' + rect.left + 'px<br>' +
