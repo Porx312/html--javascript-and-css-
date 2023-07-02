@@ -4,8 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .camp{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 20px auto;
+    border: 10px solid black;
+    border-radius: 20px;
+    position: relative;
+    }
+    .ballon{
+      font-size: 2rem;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .menudeslizante{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    }
+    .menuOculto{
+    display: none;
+    }
+    .menuOculto.active{
+    display: block;
+    }
+  </style>
 </head>
 <body>
+  <button onclick="alert('hola')">press here!</button>
+  <button id="hidden">haz click para desaparecer texto</button>
+  <h2 class="text">texto</h2>
+  <input type="button" id="ocultar" name="ocultar" placeholder="me oculto si me das click" value="me oculto si me das click">
+  <div class="camp">
+    <div class="ballon">⚽</div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
