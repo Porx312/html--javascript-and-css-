@@ -33,5 +33,20 @@ return puntajeFinal
 
 let alice = [10,2,1]
 let Bob = [5,11,1]
+/* 
+console.log(compareTriplets(alice, Bob)) */
+function wrapping(gifts) {
+  let giftsWrapping = []
+   for(let i = 0; i < gifts.length; i++){
+    let numberAsterisc = gifts[i].length
+    numberAsterisc = "*"
+    console.log(numberAsterisc[i])
+     giftsWrapping.push(`**\n*${gifts[i]}*\n**`)
+     console.log(numberAsterisc)
+   }
+   return giftsWrapping
+ }
+ 
+let gifter = ["cat","dog","lion","sheep"]
 
-console.log(compareTriplets(alice, Bob))
+console.log(wrapping(gifter))
