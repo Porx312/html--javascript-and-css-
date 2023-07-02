@@ -38,15 +38,31 @@ console.log(compareTriplets(alice, Bob)) */
 function wrapping(gifts) {
   let giftsWrapping = []
    for(let i = 0; i < gifts.length; i++){
-    let numberAsterisc = gifts[i].length
-    numberAsterisc = "*"
-    console.log(numberAsterisc[i])
      giftsWrapping.push(`**\n*${gifts[i]}*\n**`)
-     console.log(numberAsterisc)
    }
    return giftsWrapping
  }
  
 let gifter = ["cat","dog","lion","sheep"]
 
-console.log(wrapping(gifter))
+// console.log(wrapping(gifter))
+
+
+// Symbols
+
+
+
+
+// let a = Symbol("id1")
+// let b = Symbol("id2")
+// console.log(typeof a)
+// console.log(a)
+
+const NOMBRE = Symbol();
+
+const persona = {
+  [NOMBRE]:"jhon",
+  apellido: "apellido",
+}
+
+console.log(persona)
