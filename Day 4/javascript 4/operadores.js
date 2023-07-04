@@ -31,7 +31,7 @@ nullizs,null,undefined */
 // acceso condicional a un objeto
 
 
-const usuario = {
+/* const usuario = {
 nombre:"jose",
 cursos:{
 css:"aprobado",
@@ -43,3 +43,6 @@ console.log(usuario?.cursos || "la propiedad no existe")
 console.log(usuario?.cursos.css || "la propiedad no existe")
 
 
+  */
+
+ 
