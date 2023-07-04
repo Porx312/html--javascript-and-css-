@@ -48,5 +48,4 @@ $divsEventos.forEach((element)=>{
   // element.addEventListener("click", flujoEventos,false)
   // fase de captura activar a true
   element.addEventListener("click", flujoEventos,true)
-
 })
