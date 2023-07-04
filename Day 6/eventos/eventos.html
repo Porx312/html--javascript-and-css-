@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="eventos.css">
+</head>
+<body data-dark="desactive">
+  <h1 class="page--text">Este es el contenido principal de esta pagina</h1>
+  <div class="btn-group">
+    <button  id="alerta" class="btn">Alerta</button>
+    <button  id="console" class="btn">console</button>
+    <button id="color-mode" class="btn">Cabiar a dark mode</button>
+  </div>
+  <div class="form-group">
+    <ul class="lista">
+      <h4>mostrar en alerta</h4>
+      <form action="" id="alerta-form" class="form">
+        <input type="text" id="alerta-form" class="form-input">
+        <input type="submit" id="alerta-submit" class="form-submit" value="Mostrar">
+      </form>
+    </ul>
+    <ul class="lista lista-abajo">
+      <h4>mostrar abajo</h4>
+      <form action="" id="abajo-form" class="form">
+        <input type="text" id="abajo-input" class="form-submit abajo" >
+      </form>
+    </ul>
+    <ul class="lista" id="agregar">
+      <h4>Agregar item a la lista</h4>
+      <form action="" id="agregar" class="form">
+        <input type="text" id="agregar-form" class="form-input">
+        <input type="submit" id="agregar-submit" class="form-submit" value="Agregar">
+      </form>
+    </ul>
+  </div>
+  <script src="eventos.js"></script>
+</body>
+</html>
