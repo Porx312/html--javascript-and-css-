@@ -1,0 +1,77 @@
+:root{
+--back:#fff;
+}
+*{
+box-sizing: border-box;
+margin: 0;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.link{
+margin: 50px;
+display: inline-block;
+background-color: slateblue;
+color: #fff;
+text-decoration: none;
+padding: 1em 2em;
+border-radius: 2em;
+transition: .3s;
+}
+.element1{
+background-color: tomato;
+width: max-content;
+font-size: 2rem;
+color: #fff;
+margin: 50px;
+position: relative;
+}
+
+
+
+/* 
+.element1:target{
+transform: translateX(100%);
+}
+
+
+.check{
+  background-color: crimson;
+  color: #fff;
+  padding: 20px 15px;
+}
+.check:checked + label{
+text-decoration: line-through;
+}
+
+.input{
+margin: 50px;
+width: 250px;
+height: 70px;
+}
+
+.input:focus{
+color: #fff;
+background-color: rgb(56, 58, 58);
+}
+ */
+
+.validacion {
+padding: .5em 2em;
+margin: 50px;
+font-size: 1rem;
+}
+.validacion + .message::after{
+content: "aun no has escrito nada en el input";
+display: "block";
+background-color: crimson;
+padding: 1em;
+color: wheat;
+margin: 0 auto;
+width: max-content;
+}
+.validacion:placeholder-shown{
+background-color: #000;
+color: #fff;
+}
