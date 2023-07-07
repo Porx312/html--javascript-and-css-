@@ -1,0 +1,159 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.box{
+width: 500px;
+height: 500px;
+background: red;
+margin: 0 auto;
+transition: 0.5s;
+}
+
+
+@media screen and (max-width: 767px) {
+.box{
+  width: 400px;
+  height: 400px;
+  color: blue ;
+  background-color: blue ;
+}  
+}
+
+
+.interText{
+  margin: 10px ;
+
+  margin-inline-start: 0.5em;
+}
+
+
+.card-container-grid{
+margin-inline: 1rem 1rem;
+margin-block: 1rem 1rem;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(15em,1fr));
+grid-gap: 1rem;
+}
+
+.grid-box{
+background-color: red;
+padding: 7rem;
+}
+
+.card-container-flex{
+margin-inline: 1rem 1rem;
+margin-block: 1rem 1rem;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+.flex-box{
+flex-basis: 15rem;
+height: 15rem;
+flex-grow: 1;
+background-color: rebeccapurple;
+}
+
+
+.nav{
+  margin-inline: 1rem;
+  margin-block: 1rem;
+display: flex;
+flex-direction: row;
+height: 50px;
+}
+.nav1{
+flex: 1;
+flex-basis: auto;
+background-color: blue;
+
+}
+.nav2{
+flex-grow: 2;
+flex-basis: auto;
+background-color: rgb(0, 255, 0);
+}
+
+@media screen and (max-width: 767px) {
+.nav1{
+flex-grow: 0;
+}  
+.nav2{
+flex-basis: 50px;
+flex-grow: 0;
+position: relative;
+}
+
+}
+
+
+.micro-contenedor{
+display: grid;
+grid-template-columns: repeat(2,minmax(15rem,1fr));
+grid-template-rows: 1fr 1fr 1fr;
+gap: 1rem;
+
+margin-inline: 0.4rem;
+}
+
+.micro-items{
+  padding: 3rem;
+  background-color: rebeccapurple ;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.micro-img{
+width: 150px;
+height: 150px;
+background-color: beige ;
+border-radius: 50%;
+border:2px solid black ;
+}
+
+.container-text{
+  background-color: saddlebrown;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+text-align: center;
+margin-inline: 3rem 3rem;
+}
+
+@media screen and (max-width: 767px) {
+.micro-contenedor{
+grid-template-columns: 1fr;
+}
+.container-text{
+margin-inline: -1.5em;
+font-size: 0.8rem;
+}  
+}
+
+
+.text1{
+font-size: calc(0.75rem + 1.5vw);
+}
+
+.text2{
+font-size: clamp(1rem, 0.75rem + 1.5vw,2rem);
+max-inline-size: 30ch;
+text-align: center;
+line-height: 3;
+letter-spacing: 1rem;
+
+}
+.text2::first-letter{
+font-style: oblique;
+font-size: calc(2rem + 2vw);
+font-weight: 700;
+}
+
