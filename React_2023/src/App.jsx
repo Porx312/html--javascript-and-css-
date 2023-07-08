@@ -1,6 +1,7 @@
 
 import './App.css'
 import PrimerComponente from './components/1-FirsComponent'
+import Button from './components/ResponderAEventos'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <PrimerComponente image="https://i.pinimg.com/564x/88/94/52/8894528940b3d7eb88a241e3c34f4e25.jpg"/>
     
     </div>
+    <Button/>
     </>
   )
 }
