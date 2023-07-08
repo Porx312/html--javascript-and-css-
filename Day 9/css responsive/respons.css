@@ -1,0 +1,10 @@
+:root{
+--theme-light:#a0a0a0;
+--theme-dark:#000;
+}
+
+.theme{
+width: 200px;
+height: 200px;
+background-color: var(--theme-light);
+}

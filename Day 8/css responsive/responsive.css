@@ -147,13 +147,16 @@ font-size: calc(0.75rem + 1.5vw);
 font-size: clamp(1rem, 0.75rem + 1.5vw,2rem);
 max-inline-size: 30ch;
 text-align: center;
-line-height: 3;
+/* line-height: 3;
 letter-spacing: 1rem;
-
-}
-.text2::first-letter{
-font-style: oblique;
-font-size: calc(2rem + 2vw);
-font-weight: 700;
+ */
 }
 
+
+.logoJavascript{
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+  margin-inline: auto;
+
+}
