@@ -85,8 +85,8 @@ const rec = new Rectangle(3,4)
 const sqr = new Square(3)
 
 
-console.log(rec.area());
-console.log(sqr.area());
+/* console.log(rec.area());
+console.log(sqr.area()); */
 
 
 const btnId = "btn";
@@ -116,12 +116,102 @@ perimeter(){
 const rectangle = new Polygon([10, 20, 10, 20]);
 const square = new Polygon([10, 10, 10, 10]);
 const pentagon = new Polygon([10, 20, 30, 40, 43]);
-
+/* 
 console.log(rectangle.perimeter());
 console.log(square.perimeter());
-console.log(pentagon.perimeter());
+console.log(pentagon.perimeter()); */
 
 /* 
 60
 40
 143 */
+
+
+/* * Determine the original side lengths and return an array:
+* - The first element is the length of the shorter side
+* - The second element is the length of the longer side
+* 
+* Parameter(s):
+* literals: The tagged template literal's array of strings.
+* expressions: The tagged template literal's array of expression values (i.e., [area, perimeter]).
+*/ 
+function sides(literals, ...expressions) {
+  let copyArr = [...expressions];
+  let arr = [];
+
+  let s1 = (copyArr[1] + Math.sqrt(copyArr[1] ** 2 - 16 * copyArr[0])) / 4;
+  let s2 = (copyArr[1] - Math.sqrt(copyArr[1] ** 2 - 16 * copyArr[0])) / 4;
+
+  arr.push(s1);
+  arr.push(s2);
+
+  const orderArr = arr.sort((a, b) => a - b);
+  return orderArr;
+}
+
+/* sides("jp;a", 140, 48);
+ */
+
+
+function modifyArray(nums) {
+  let newArr = []  
+  for(let i = 0; i < nums.length; i++) {
+    if(nums[i] % 2 === 0) {
+      newArr.push(nums[i] *2)
+    } else{
+    newArr.push(nums[i] * 3)
+    }
+  }
+ return newArr
+}
+/* let arr = [1,2,3,4,5] */
+/* modifyArray(arr) */
+/* 
+function biwidis(k,n){
+  let obj = []
+  for(let i = 1; i <= n; i++){
+    if()
+  }
+  console.log(obj)
+}
+
+biwidis(1,9) */
+
+
+
+function plusMinus(arr) {
+  // Write your code here
+  let negative  = 0
+  let positive = 0
+  let zero = 0
+  for(let i = 0; i < arr.length; i++){
+  if(Math.sign(arr[i]) === -1){
+    negative++
+  }else if(Math.sign(arr[i]) === 1){
+    positive++
+  }else{
+  zero++;
+  }
+}
+  positive /= arr.length
+  negative /= arr.length
+  zero /= arr.length
+  console.log(positive)
+  console.log(negative)
+  console.log(zero)
+}
+
+/* plusMinus([-4, 3, -9, 0, 4, 1]) */
+
+
+function staircase(n) {
+  for (let i = 1; i <= n; i++) {
+    let level = " ".repeat(n - i) + "#".repeat(i);
+    console.log(level)
+  }
+}
+
+/* console.log(staircase(4)); */
+
+
+ 

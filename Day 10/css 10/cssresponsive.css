@@ -1,0 +1,17 @@
+.cards{
+display: flex;
+flex-direction: column ;
+overflow-y: auto;
+scroll-snap-type: inline mandatory;
+scroll-behavior: smooth;
+gap: 1rem;
+height: 45rem;
+}
+.card{
+  flex-grow: 0;
+flex-shrink: 0;
+flex-basis: 15em;
+height: 15rem;
+background-color: cadetblue;
+scroll-snap-align: start;
+}
