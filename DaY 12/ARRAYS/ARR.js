@@ -17,3 +17,5 @@ console.log(productis);
 const productos = ["jose", "enrique", "porx"];
 console.log(productos.indexOf("jose"));
 console.log(productos.includes("jose"));
+
+
